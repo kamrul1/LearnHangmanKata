@@ -49,7 +49,8 @@ namespace Hangman.Library
                 return GuessResult.Invalid;
             }
 
-            if (correctLettersAttempted.Contains(c) || inCorrectLettersAttempted.Contains(c))
+            if (correctLettersAttempted.Contains(c) 
+                || inCorrectLettersAttempted.Contains(c))
             {
                 UpdateGameState();
                 return GuessResult.Duplicate;
